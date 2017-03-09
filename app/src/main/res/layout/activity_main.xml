@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Modif.1
+    Se añade código para poder utilizar el protocolo MQTT en Android
+    1 de Febrero de 2017
+    Bibliografía: http://www.hivemq.com/blog/mqtt-client-library-enyclopedia-paho-android-service
+    -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.hope.helloworld.MainActivity">
+
+    <Button
+
+    android:text="Publicar"
+        android:onClick="pub"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/button"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="201dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:id="@+id/subText"
+        android:layout_alignTop="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Conectar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="34dp"
+        android:onClick="conn"
+        android:id="@+id/connBtn" />
+
+    <Button
+        android:text="Desconectar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/connBtn"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button"
+        android:onClick="disconn"
+        android:id="@+id/disconnBtn" />
+
+</RelativeLayout>
